@@ -20,7 +20,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 2rem;
-            max-width: 400px;
+            max-width: 500px;
             width: 100%;
             text-align: center;
         }
@@ -34,10 +34,15 @@
             font-weight: normal;
             margin-bottom: 2rem;
         }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
         }
         .button {
             display: block;
@@ -58,11 +63,21 @@
 <body>
     <div class="container">
         <h1>CRM Templates</h1>
-        <h2>For new customers, first log in to Airtable with an approved email and then fill these forms in order, or choose the form you wish to complete.</h2>
-        <div class="button-container">
+        <h2>Choose the appropriate form based on your task:</h2>
+        <div class="form-group">
+            <p class="form-description">This form is for creating a new customer account with our CRM:</p>
             <a href="https://airtable.com/appk0KNEXB39aOGCC/pagP6XSBGyvxovKZG/form" class="button">Account Form</a>
+        </div>
+        <div class="form-group">
+            <p class="form-description">This form creates new contact information for an existing CRM customer account. If the contact information for an existing account changes, start with this form:</p>
             <a href="https://airtable.com/appk0KNEXB39aOGCC/pagg8QBgzbt3XF5uQ/form" class="button">New Dealer Form</a>
+        </div>
+        <div class="form-group">
+            <p class="form-description">This form is for managing new opportunities with an existing account and existing contact. If the new opportunity is for an existing account and existing contact, start with this form:</p>
             <a href="https://airtable.com/appk0KNEXB39aOGCC/pagDhOTMy81R1pJhD/form" class="button">New Opportunities Form</a>
+        </div>
+        <div class="form-group">
+            <p class="form-description">This form is for managing interactions for an existing opportunity in the CRM:</p>
             <a href="https://airtable.com/appk0KNEXB39aOGCC/pagCa3mSMmlhIjEho/form" class="button">Dealer Interaction Form</a>
         </div>
     </div>
